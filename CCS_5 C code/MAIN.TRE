@@ -1,0 +1,959 @@
+ÀÄmain
+   ÃÄmain  0/682  Ram=2
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄIPAddressInit  0/36  Ram=0
+   ³  ³  ÀÄDHCPEnable  0/18  Ram=1
+   ³  ÃÄTickInit  0/18  Ram=0
+   ³  ÃÄStackInit  0/94  Ram=4
+   ³  ³  ÃÄGenerateRandomDWORD  0/326  Ram=17
+   ³  ³  ³  ÃÄLFSRRand  0/160  Ram=10
+   ³  ³  ³  ÃÄLFSRRand  0/160  Ram=10
+   ³  ³  ³  ÃÄLFSRRand  0/160  Ram=10
+   ³  ³  ³  ÃÄLFSRRand  0/160  Ram=10
+   ³  ³  ³  ÃÄLFSRSeedRand  0/98  Ram=9
+   ³  ³  ³  ³  ÀÄLFSRRand  0/160  Ram=10
+   ³  ³  ³  ÀÄLFSRRand  0/160  Ram=10
+   ³  ³  ÃÄLFSRSeedRand  0/98  Ram=9
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄMACInit  0/548  Ram=2
+   ³  ³  ³  ÃÄSendSystemReset  0/56  Ram=1
+   ³  ³  ³  ³  ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ³  ³  ³  ÀÄ@delay_ms1  0/40  Ram=1
+   ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄMACPut  0/36  Ram=2
+   ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³  ÀÄBFSReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ÃÄWritePHYReg  0/160  Ram=6
+   ³  ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄReadMACReg  0/54  Ram=2
+   ³  ³  ³  ³  ÀÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÃÄWritePHYReg  0/160  Ram=6
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄWritePHYReg  0/160  Ram=6
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄBFSReg  0/42  Ram=3
+   ³  ³  ÃÄUDPInit  0/34  Ram=1
+   ³  ³  ³  ÀÄUDPClose  0/132  Ram=5
+   ³  ³  ÃÄTCPInit  0/412  Ram=13
+   ³  ³  ³  ÃÄ@MEMSET  0/26  Ram=0
+   ³  ³  ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÃÄMACSetWritePtr  0/112  Ram=7
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÀÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³  ³  ÃÄMACSetReadPtr  0/108  Ram=7
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÀÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ³  ³  ÃÄMACMemCopyAsync  0/654  Ram=14
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄMACGet  0/42  Ram=1
+   ³  ³  ³  ³  ³  ³  ÃÄMACPut  0/36  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄBFSReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ³  ÀÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ÀÄMACIsMemCopyDone  0/40  Ram=1
+   ³  ³  ³  ³  ³     ÀÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ÀÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÀÄCloseSocket  0/210  Ram=4
+   ³  ³  ³     ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÃÄLFSRRand  0/160  Ram=10
+   ³  ³  ³     ÀÄLFSRRand  0/160  Ram=10
+   ³  ³  ÃÄDHCPInit  0/62  Ram=2
+   ³  ³  ³  ÀÄUDPClose  0/132  Ram=5
+   ³  ³  ÃÄDHCPDisable  0/30  Ram=1
+   ³  ³  ³  ÀÄUDPClose  0/132  Ram=5
+   ³  ³  ÀÄHTTPInit  0/136  Ram=3
+   ³  ³     ÀÄTCPOpen  0/120  Ram=9
+   ³  ³        ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³        ÀÄSyncTCB  0/216  Ram=7
+   ³  ³           ÀÄ*
+   ³  ÃÄlcd_init  0/162  Ram=6
+   ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ³  ÃÄlcd_send_nibble  0/68  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ³  ÃÄlcd_send_nibble  0/68  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ³  ÀÄlcd_send_byte  0/82  Ram=3
+   ³  ³     ÃÄlcd_read_byte  0/78  Ram=3
+   ³  ³     ³  ÃÄlcd_read_nibble  0/86  Ram=2
+   ³  ³     ³  ÀÄlcd_read_nibble  0/86  Ram=2
+   ³  ³     ÃÄlcd_send_nibble  0/68  Ram=1
+   ³  ³     ÀÄlcd_send_nibble  0/68  Ram=1
+   ³  ÃÄlcd_cursor_on  0/34  Ram=1
+   ³  ³  ÃÄlcd_send_byte  0/82  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄlcd_send_byte  0/82  Ram=3
+   ³  ³     ÀÄ*
+   ³  ÃÄ@PSTRINGC_6030  0/32  Ram=2
+   ³  ³  ÀÄlcd_putc  0/110  Ram=1
+   ³  ³     ÃÄlcd_gotoxy  0/38  Ram=4
+   ³  ³     ³  ÀÄlcd_send_byte  0/82  Ram=3
+   ³  ³     ³     ÀÄ*
+   ³  ³     ÃÄlcd_send_byte  0/82  Ram=3
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ³     ÃÄlcd_gotoxy  0/38  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄlcd_send_byte  0/82  Ram=3
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄlcd_send_byte  0/82  Ram=3
+   ³  ³        ÀÄ*
+   ³  ÃÄStackTask  0/482  Ram=12
+   ³  ³  ÃÄMACIsLinked  0/28  Ram=2
+   ³  ³  ³  ÀÄReadPHYReg  0/188  Ram=4
+   ³  ³  ³     ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³     ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³     ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÃÄReadMACReg  0/54  Ram=2
+   ³  ³  ³     ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³     ÃÄReadMACReg  0/54  Ram=2
+   ³  ³  ³     ÃÄReadMACReg  0/54  Ram=2
+   ³  ³  ³     ÀÄBankSel  0/54  Ram=5
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄDHCPInit  0/62  Ram=2
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄDHCPTask  0/1264  Ram=5
+   ³  ³  ³  ÃÄ@goto13557  0/62  Ram=0
+   ³  ³  ³  ÃÄUDPOpenEx  0/348  Ram=14
+   ³  ³  ³  ³  ÀÄ@MEMSET  0/26  Ram=0
+   ³  ³  ³  ÃÄMACIsLinked  0/28  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄUDPIsPutReady  0/74  Ram=1
+   ³  ³  ³  ³  ÃÄMACIsTxReady  0/40  Ram=1
+   ³  ³  ³  ³  ³  ÀÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ÀÄUDPSetTxBuffer  0/64  Ram=4
+   ³  ³  ³  ³     ÀÄMACSetWritePtr  0/112  Ram=7
+   ³  ³  ³  ³        ÀÄ*
+   ³  ³  ³  ÃÄ@MEMSET  0/26  Ram=0
+   ³  ³  ³  ÃÄ_DHCPSend  0/756  Ram=11
+   ³  ³  ³  ³  ÃÄrand  0/112  Ram=4
+   ³  ³  ³  ³  ³  ÃÄ@MUL3232  0/94  Ram=14
+   ³  ³  ³  ³  ³  ÀÄ@DIV1616  0/72  Ram=5
+   ³  ³  ³  ³  ÃÄrand  0/112  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄMACPut  0/36  Ram=2
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPutArray  0/130  Ram=6
+   ³  ³  ³  ³  ³  ÀÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPutArray  0/130  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPutArray  0/130  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPPut  0/86  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÀÄUDPFlush  0/262  Ram=14
+   ³  ³  ³  ³     ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³     ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³     ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³     ÃÄMACSetWritePtr  0/112  Ram=7
+   ³  ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³  ³     ÃÄIPPutHeader  0/234  Ram=29
+   ³  ³  ³  ³     ³  ÃÄSwapIPHeader  0/218  Ram=6
+   ³  ³  ³  ³     ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³     ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³     ³  ³  ÀÄswaps  0/34  Ram=5
+   ³  ³  ³  ³     ³  ÃÄCalcIPChecksum  0/232  Ram=16
+   ³  ³  ³  ³     ³  ÃÄMACPutHeader  0/198  Ram=8
+   ³  ³  ³  ³     ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³     ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³     ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³     ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³     ³  ³  ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³     ³  ³  ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³     ³  ³  ÃÄMACPut  0/36  Ram=2
+   ³  ³  ³  ³     ³  ³  ÀÄMACPut  0/36  Ram=2
+   ³  ³  ³  ³     ³  ÀÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³     ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³     ÀÄMACFlush  0/568  Ram=2
+   ³  ³  ³  ³        ÃÄBFSReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄBFSReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³        ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³        ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³        ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³        ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³        ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³        ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ³        ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³        ÃÄBFSReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄBFSReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³        ÃÄBFCReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³        ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ³        ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³        ÀÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄGetTickCopy  0/58  Ram=4
+   ³  ³  ³  ÃÄUDPIsGetReady  0/70  Ram=1
+   ³  ³  ³  ³  ÀÄUDPSetRxBuffer  0/34  Ram=4
+   ³  ³  ³  ³     ÀÄIPSetRxBuffer  0/28  Ram=4
+   ³  ³  ³  ³        ÀÄMACSetReadPtrInRx  0/88  Ram=6
+   ³  ³  ³  ³           ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³           ÀÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ_DHCPReceive  0/1020  Ram=15
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄMACGet  0/42  Ram=1
+   ³  ³  ³  ³  ÃÄUDPSetRxBuffer  0/34  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGetArray  0/140  Ram=6
+   ³  ³  ³  ³  ³  ÀÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ³  ÃÄUDPSetRxBuffer  0/34  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPSetRxBuffer  0/34  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGetArray  0/140  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPSetRxBuffer  0/34  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGetArray  0/140  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGetArray  0/140  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPGet  0/78  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄUDPDiscard  0/24  Ram=0
+   ³  ³  ³  ³  ³  ÀÄMACDiscardRx  0/106  Ram=2
+   ³  ³  ³  ³  ³     ÃÄBFSReg  0/42  Ram=3
+   ³  ³  ³  ³  ³     ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³     ÀÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ÀÄUDPDiscard  0/24  Ram=0
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÃÄUDPIsPutReady  0/74  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ@MEMSET  0/26  Ram=0
+   ³  ³  ³  ÃÄ_DHCPSend  0/756  Ram=11
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄUDPIsGetReady  0/70  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ_DHCPReceive  0/1020  Ram=15
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄUDPClose  0/132  Ram=5
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄUDPOpenEx  0/348  Ram=14
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄUDPIsPutReady  0/74  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ_DHCPSend  0/756  Ram=11
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄUDPIsGetReady  0/70  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ_DHCPReceive  0/1020  Ram=15
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄUDPClose  0/132  Ram=5
+   ³  ³  ³  ÀÄTickGet  0/40  Ram=2
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄDHCPIsBound  0/16  Ram=1
+   ³  ³  ÃÄTCPTick  0/2112  Ram=11
+   ³  ³  ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ³  ÃÄMACIsTxReady  0/40  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGetDiv256  0/38  Ram=6
+   ³  ³  ³  ³  ÀÄGetTickCopy  0/58  Ram=4
+   ³  ³  ³  ÃÄTickGetDiv256  0/38  Ram=6
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGetDiv256  0/38  Ram=6
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄMACIsTxReady  0/40  Ram=1
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄMACGetFreeRxSize  0/280  Ram=6
+   ³  ³  ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ÀÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ÃÄSwapTCPHeader  0/550  Ram=8
+   ³  ³  ³  ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³  ³  ÃÄswapl  0/374  Ram=11
+   ³  ³  ³  ³  ³  ÃÄswapl  0/374  Ram=11
+   ³  ³  ³  ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³  ³  ÀÄswaps  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄCalcIPChecksum  0/232  Ram=16
+   ³  ³  ³  ³  ÃÄMACSetWritePtr  0/112  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄIPPutHeader  0/234  Ram=29
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³  ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³  ÃÄMACSetReadPtr  0/108  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCalcIPBufferChecksum  0/328  Ram=36
+   ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ³  ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ³  ÀÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ÃÄMACSetWritePtr  0/112  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ³  ÀÄMACFlush  0/568  Ram=2
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTCPDisconnect  0/234  Ram=1
+   ³  ³  ³  ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÀÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÃÄTCPDisconnect  0/234  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄTickGetDiv256  0/38  Ram=6
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ÀÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄUDPTask  0/138  Ram=3
+   ³  ³  ÃÄUDPDiscard  0/24  Ram=0
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄMACGetHeader  0/342  Ram=29
+   ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ÃÄBankSel  0/54  Ram=5
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄMACDiscardRx  0/106  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ÀÄswaps  0/34  Ram=5
+   ³  ³  ÃÄARPProcess  0/284  Ram=30
+   ³  ³  ³  ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ÃÄMACDiscardRx  0/106  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄSwapARPPacket  0/218  Ram=6
+   ³  ³  ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ³  ÀÄswaps  0/34  Ram=5
+   ³  ³  ³  ÀÄARPPut  0/262  Ram=6
+   ³  ³  ³     ÃÄMACIsTxReady  0/40  Ram=1
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÃÄMACSetWritePtr  0/112  Ram=7
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÃÄSwapARPPacket  0/218  Ram=6
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÃÄMACPutHeader  0/198  Ram=8
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³     ÀÄMACFlush  0/568  Ram=2
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄIPGetHeader  0/262  Ram=32
+   ³  ³  ³  ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ÃÄMACCalcRxChecksum  0/180  Ram=10
+   ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ÃÄReadETHReg  0/42  Ram=2
+   ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ÃÄCalcIPBufferChecksum  0/328  Ram=36
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ³  ÀÄWriteReg  0/42  Ram=3
+   ³  ³  ³  ÃÄMACSetReadPtrInRx  0/88  Ram=6
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄSwapIPHeader  0/218  Ram=6
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄICMPProcess  0/234  Ram=10
+   ³  ³  ³  ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ÃÄMACCalcRxChecksum  0/180  Ram=10
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄMACIsTxReady  0/40  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄMACSetWritePtr  0/112  Ram=7
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄIPPutHeader  0/234  Ram=29
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄMACPutArray  0/70  Ram=5
+   ³  ³  ³  ÃÄMACMemCopyAsync  0/654  Ram=14
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄMACIsMemCopyDone  0/40  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄMACFlush  0/568  Ram=2
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄTCPProcess  0/380  Ram=45
+   ³  ³  ³  ÃÄswaps  0/34  Ram=5
+   ³  ³  ³  ÃÄCalcIPChecksum  0/232  Ram=16
+   ³  ³  ³  ÃÄCalcIPBufferChecksum  0/328  Ram=36
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄMACDiscardRx  0/106  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄIPSetRxBuffer  0/28  Ram=4
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ÃÄSwapTCPHeader  0/550  Ram=8
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄFindMatchingTCPSocket  0/1574  Ram=14
+   ³  ³  ³  ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄTickGetDiv256  0/38  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³  ³  ÀÄTickGetDiv256  0/38  Ram=6
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÃÄHandleTCPSeg  0/4568  Ram=36
+   ³  ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄGetMaxSegSizeOption  0/290  Ram=6
+   ³  ³  ³  ³  ³  ÃÄIPSetRxBuffer  0/28  Ram=4
+   ³  ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ³  ÃÄMACGet  0/42  Ram=1
+   ³  ³  ³  ³  ³  ÃÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ³  ³  ÃÄMACGet  0/42  Ram=1
+   ³  ³  ³  ³  ³  ÃÄMACGet  0/42  Ram=1
+   ³  ³  ³  ³  ³  ÃÄMACGet  0/42  Ram=1
+   ³  ³  ³  ³  ³  ÃÄMACGet  0/42  Ram=1
+   ³  ³  ³  ³  ³  ÃÄMACGet  0/42  Ram=1
+   ³  ³  ³  ³  ³  ÀÄMACGetArray  0/118  Ram=9
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄGetMaxSegSizeOption  0/290  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTickGet  0/40  Ram=2
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄIPSetRxBuffer  0/28  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄIPSetRxBuffer  0/28  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTickGetDiv256  0/38  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄTickGetDiv256  0/38  Ram=6
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÃÄCloseSocket  0/210  Ram=4
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÀÄSendTCP  0/1622  Ram=46
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÀÄMACDiscardRx  0/106  Ram=2
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÀÄUDPProcess  0/394  Ram=33
+   ³  ³     ÃÄMACGetArray  0/118  Ram=9
+   ³  ³     ÃÄswaps  0/34  Ram=5
+   ³  ³     ÃÄswaps  0/34  Ram=5
+   ³  ³     ÃÄswaps  0/34  Ram=5
+   ³  ³     ÃÄswaps  0/34  Ram=5
+   ³  ³     ÃÄCalcIPChecksum  0/232  Ram=16
+   ³  ³     ÃÄIPSetRxBuffer  0/28  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄCalcIPBufferChecksum  0/328  Ram=36
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄMACDiscardRx  0/106  Ram=2
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄFindMatchingUDPSocket  0/390  Ram=14
+   ³  ³     ÀÄMACDiscardRx  0/106  Ram=2
+   ³  ³        ÀÄ*
+   ³  ÃÄprint_my_ip  0/526  Ram=1
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄlcd_putc  0/110  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÃÄ@DIV88  0/44  Ram=3
+   ³  ³  ÀÄlcd_putc  0/110  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄTCPIsConnected  0/48  Ram=1
+   ³  ³  ÀÄSyncTCBStub  0/162  Ram=5
+   ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ÃÄTCPIsGetReady  0/130  Ram=3
+   ³  ³  ³  ÀÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄTickGetDiv256  0/38  Ram=6
+   ³  ³     ÀÄ*
+   ³  ÃÄ@STRFINDINLIST  0/60  Ram=1
+   ³  ÃÄ@const6080  0/30  Ram=0
+   ³  ÃÄTCPClose  0/42  Ram=1
+   ³  ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³  ÀÄTCPDisconnect  0/234  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄ@PSTRINGC_6030  0/32  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄ@const6080  0/30  Ram=0
+   ³  ÃÄoutput_digital  0/696  Ram=5
+   ³  ³  ÃÄStackTask  0/482  Ram=12
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@goto16247  0/46  Ram=0
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@WRITEBITA  0/66  Ram=6
+   ³  ³  ÀÄ@WRITEBITA  0/66  Ram=6
+   ³  ÃÄ@const6080  0/30  Ram=0
+   ³  ÃÄread_digital  0/154  Ram=2
+   ³  ³  ÃÄStackTask  0/482  Ram=12
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@goto16266  0/46  Ram=0
+   ³  ³  ÀÄTCPPut  0/290  Ram=6
+   ³  ³     ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³     ÃÄTCPIsPutReady  0/176  Ram=4
+   ³  ³     ³  ÀÄSyncTCBStub  0/162  Ram=5
+   ³  ³     ÃÄTCPFlush  0/62  Ram=1
+   ³  ³     ³  ÃÄSyncTCBStub  0/162  Ram=5
+   ³  ³     ³  ÃÄSyncTCB  0/216  Ram=7
+   ³  ³     ³  ³  ÀÄ*
+   ³  ³     ³  ÀÄSendTCP  0/1622  Ram=46
+   ³  ³     ³     ÀÄ*
+   ³  ³     ÃÄTCPFlush  0/62  Ram=1
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄTCPRAMCopy  0/230  Ram=8
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄTCPFlush  0/62  Ram=1
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄTickGetDiv256  0/38  Ram=6
+   ³  ³        ÀÄ*
+   ³  ÃÄ@const6080  0/30  Ram=0
+   ³  ÃÄread_analogue  0/148  Ram=7
+   ³  ³  ÃÄStackTask  0/482  Ram=12
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPPut  0/290  Ram=6
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄTCPPut  0/290  Ram=6
+   ³  ³     ÀÄ*
+   ³  ÃÄ@const6080  0/30  Ram=0
+   ³  ÃÄwrite_lcd  0/168  Ram=24
+   ³  ³  ÃÄStackTask  0/482  Ram=12
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄTCPGetArray  0/376  Ram=11
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄlcd_putc  0/110  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ÀÄ@PSTRINGC_6030  0/32  Ram=2
+   ³     ÀÄ*
+   ÀÄISRTimer0  0/6  Ram=0
+      ÀÄTickUpdate  0/30  Ram=0

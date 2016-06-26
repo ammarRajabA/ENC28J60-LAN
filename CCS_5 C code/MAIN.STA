@@ -1,0 +1,238 @@
+
+ROM used:   36342/49152 (74%)
+            49148/49152 (100%) including unused fragments
+
+            1.2 Average locations per line
+            9.9 Average locations per statement
+
+RAM used:   889/3328 (27%) at main() level
+            1083/3328 (33%) worst case
+
+Stack used: 8 worst case (7 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  170   146   4  main.c
+   42     0   0  main.h
+  842     0   0  ..\..\..\..\Program Files\PICC\Devices\18F4585.h
+   96     6   0  tcpip\p18cxxx.h
+ 4606     0   0  tcpip\PIC18F4585_registers.h
+  163     0   0  ..\..\..\..\Program Files\PICC\Drivers\stdint.h
+  191     0   0  tcpip\StackTsk2.h
+  434     6   0  tcpip\TCPIP Stack\TCPIP.h
+  423     0   0  ..\..\..\..\Program Files\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\Program Files\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\Program Files\PICC\Drivers\ctype.h
+ 1351     0   0  ..\..\..\..\Program Files\PICC\Drivers\stdlib.h
+  552     0   0  tcpip\TCPIP Stack\GenericTypeDefs.h
+  210     0   0  tcpip\TCPIP Stack\Compiler.h
+   37     0   0  ..\..\..\..\Program Files\PICC\Drivers\stdio.h
+   22     1   0  tcpip\TCPIP Stack\HardwareProfile.h
+   97     1   0  tcpip\TCPIP Stack\TCPIPConfig.h
+  152     0   0  tcpip\TCPIP Stack\StackTsk.h
+  141     0   0  tcpip\TCPIP Stack\Helpers.h
+   94     0   0  tcpip\TCPIP Stack\Delay.h
+   88     0   0  tcpip\TCPIP Stack\Tick.h
+  330     0   0  tcpip\TCPIP Stack\MAC.h
+  745     0   0  tcpip\TCPIP Stack\ENC28J60.h
+  256     0   0  tcpip\TCPIP Stack\IP.h
+  112     0   0  tcpip\TCPIP Stack\ARP.h
+  104     0   0  tcpip\TCPIP Stack\XEEPROM.h
+   98     0   0  tcpip\TCPIP Stack\SPIFlash.h
+   97     0   0  tcpip\TCPIP Stack\SPIRAM.h
+  216     0   0  tcpip\TCPIP Stack\UDP.h
+  352     0   0  tcpip\TCPIP Stack\TCP.h
+  148     0   0  tcpip\TCPIP Stack\DHCP.h
+   72     0   0  tcpip\TCPIP Stack\ICMP.h
+   76     0   0  tcpip\TCPIP Stack\ccs_HTTP2.h
+  240     0   0  tcpip\TCPIP Stack\mpfs.h
+  848    66   2  tcpip\StackTsk2.c
+  553    59   2  tcpip\StackTsk.c
+ 2182   248   7  tcpip\Helpers.c
+   34     7   0  ..\..\..\..\Program Files\PICC\Drivers\stdarg.h
+  444    35   1  tcpip\Tick.c
+ 2338   551  15  tcpip\ENC28J60.c
+  312    39   1  tcpip\IP.c
+  702    52   1  tcpip\ARP.c
+  489    22   1  tcpip\ICMP.c
+ 1366   172   5  tcpip\UDP.c
+ 1184   307   8  tcpip\DHCP.c
+ 5592  1324  36  tcpip\TCP.c
+  753    86   2  tcpip\MPFS.c
+ 1607   408  11  tcpip\ccs_HTTP2.c
+  116    28   1  tcpip\p18cxxx.c
+  456   100   3  ..\..\..\..\Program Files\PICC\Drivers\lcd.c
+----- -----
+31593  3664 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     40   0    1             @delay_ms1
+0     94   0   14             @MUL3232
+0    112   0    4    101  3.8  rand
+0     72   0    5             @DIV1616
+0     34   0    5             @MUL1616
+0      6   0    0     52  2.2  ISRTimer0
+0     94   0    4    555  6.9  StackInit
+0    482   1   12   2053 11.3  StackTask
+0     98   0    9    229  4.4  LFSRSeedRand
+0    160   0   10    205  5.1  LFSRRand
+0    326   0   17   1813 11.8  GenerateRandomDWORD
+0     34   0    5    256  3.3  swaps
+0    374   1   11    831  4.3  swapl
+0    232   0   16    799 10.3  CalcIPChecksum
+0     18   0    0    156  2.2  TickInit
+0     58   0    4    304  4.5  GetTickCopy
+0     40   0    2     66  2.2  TickGet
+0     38   0    6    331  3.6  TickGetDiv256
+0     30   0    0    354  5.5  TickUpdate
+0    548   1    2   6711  9.0  MACInit
+0     28   0    2     44  1.6  MACIsLinked
+0     40   0    1     48  2.1  MACIsTxReady
+0    106   0    2    913  7.2  MACDiscardRx
+0    280   0    6   1684  9.2  MACGetFreeRxSize
+0    342   0   29   2157 10.4  MACGetHeader
+0    198   0    8   1495  8.3  MACPutHeader
+0    568   1    2   2731 11.8  MACFlush
+0     88   0    6    852  7.3  MACSetReadPtrInRx
+0    112   0    7    366  5.2  MACSetWritePtr
+0    108   0    7    368  5.0  MACSetReadPtr
+0    180   0   10   1359  7.7  MACCalcRxChecksum
+0    328   0   36   1256 10.7  CalcIPBufferChecksum
+0    654   1   14   6059 12.6  MACMemCopyAsync
+0     40   0    1     49  1.9  MACIsMemCopyDone
+0     42   0    1    456  4.9  MACGet
+0    118   0    9    922  9.6  MACGetArray
+0     36   0    2    456  4.5  MACPut
+0     70   0    5    616  7.7  MACPutArray
+0     56   0    1    399  4.7  SendSystemReset
+0     42   0    2    475  4.7  ReadETHReg
+0     54   0    2    647  4.7  ReadMACReg
+0    188   0    4    554  4.3  ReadPHYReg
+0     42   0    3    618  5.9  WriteReg
+0     42   0    3    458  4.7  BFCReg
+0     42   0    3    458  4.7  BFSReg
+0    160   0    6    401  4.7  WritePHYReg
+0     54   0    5    144  4.3  BankSel
+0    262   0   32    919  7.9  IPGetHeader
+0    234   0   29    992  6.8  IPPutHeader
+0     28   0    4     33  1.7  IPSetRxBuffer
+0    218   0    6    165  2.5  SwapIPHeader
+0    262   0    6    909  7.1  ARPPut
+0    284   0   30   1104  9.8  ARPProcess
+0    218   0    6    196  3.2  SwapARPPacket
+0    234   0   10   1270  9.4  ICMPProcess
+0     34   0    1    133  3.3  UDPInit
+0    348   0   14   1320 12.2  UDPOpenEx
+0     26   0    0             @MEMSET
+0    138   0    3    253  6.4  UDPTask
+0    132   0    5    206  4.1  UDPClose
+0     64   0    4    313  3.7  UDPSetTxBuffer
+0     34   0    4     63  2.3  UDPSetRxBuffer
+0     74   0    1    238  4.3  UDPIsPutReady
+0     86   0    1    204  4.6  UDPPut
+0    130   0    6    318  5.8  UDPPutArray
+0    262   0   14    914  6.4  UDPFlush
+0     70   0    1    178  3.8  UDPIsGetReady
+0     78   0    4    142  4.7  UDPGet
+0    140   0    6    295  6.5  UDPGetArray
+0     24   0    0    123  2.8  UDPDiscard
+0    394   1   33   1613  8.8  UDPProcess
+0    390   1   14   1068  8.4  FindMatchingUDPSocket
+0     62   0    2    547  5.2  DHCPInit
+0     30   0    1    149  3.1  DHCPDisable
+0     18   0    1    129  3.0  DHCPEnable
+0     16   0    1     52  1.9  DHCPIsBound
+0   1264   2    5   6420 15.0  DHCPTask
+0     62   0    0             @goto13557
+0   1020   1   15   5309 15.9  _DHCPReceive
+0    756   1   11   3687  9.9  _DHCPSend
+0    162   0    5    362  6.8  SyncTCBStub
+0    216   0    7    472  7.0  SyncTCB
+0    412   1   13   2585 11.1  TCPInit
+0    120   0    9    675  7.3  TCPOpen
+0     48   0    1    108  3.3  TCPIsConnected
+0    234   0    1   1113 10.2  TCPDisconnect
+0     42   0    1    127  3.2  TCPClose
+0     62   0    1    169  3.7  TCPFlush
+0    176   0    4    510  6.2  TCPIsPutReady
+0    290   0    6   1248 10.4  TCPPut
+0    130   0    3    297  4.4  TCPIsGetReady
+0    376   1   11   1433  9.5  TCPGetArray
+0   2112   3   11   9302 19.6  TCPTick
+0    380   1   45   1237  8.1  TCPProcess
+0   1622   2   46  11842 17.0  SendTCP
+0   1574   2   14   3699 13.3  FindMatchingTCPSocket
+0    550   1    8    409  2.9  SwapTCPHeader
+0    210   0    4   1618  6.0  CloseSocket
+0    290   0    6   1216 11.2  GetMaxSegSizeOption
+0   4568   6   36  21973 18.4  HandleTCPSeg
+0    230   0    8    858  8.3  TCPRAMCopy
+0     14   0    0             @const5935
+0     24   0    0             @const5941
+0     10   0    0             @const5943
+0     14   0    0             @const5944
+0     16   0    0             @const5946
+0     48   0    0             @const5949
+0     26   0    0             @const5950
+0     20   0    0             @const5951
+0     14   0    0             @const5954
+0     78   0    0             @const5960
+0    136   0    3    475  5.0  HTTPInit
+0     10   0    0             @const5988
+0     14   0    0             @const5990
+0     14   0    0             @const5992
+0     14   0    0             @const5993
+0     14   0    0             @const5994
+0     78   0    3    760  4.5  lcd_read_byte
+0     86   0    2    262  3.7  lcd_read_nibble
+0     68   0    1    399  2.4  lcd_send_nibble
+0     82   0    3    415  3.7  lcd_send_byte
+0    162   0    6    852  6.2  lcd_init
+0     38   0    4    208  6.3  lcd_gotoxy
+0    110   0    1    354  4.7  lcd_putc
+0     34   0    1     92  2.3  lcd_cursor_on
+0     36   0    0    445  2.8  IPAddressInit
+0    696   1    5   1946  7.6  output_digital
+0     66   0    6             @WRITEBITA
+0     46   0    0             @goto16247
+0    154   0    2    759  6.0  read_digital
+0     46   0    0             @goto16266
+0    148   0    7    580  6.3  read_analogue
+0    168   0   24    488  6.6  write_lcd
+0    526   1    1   1535  5.4  print_my_ip
+0     44   0    3             @DIV88
+0    682   1    2   1043  6.4  main
+0     10   0    0             @const6075
+0     32   0    2             @PSTRINGC_6030
+0     30   0    0             @const6080
+0     22   0    0             @const6081
+0     16   0    0             @const6086
+0     60   0    1             @STRFINDINLIST
+0     14   0    0             @const6089
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               111
+    Statements              3664
+    Comments                12314
+    Volume (V)              253922
+    Difficulty (D)          732.3
+    Effort to implement (E) 185938188
+    Time to implement (T)   2869 hours, 25 minutes
+    Est Delivered Bugs (B)  109
+    Cyclomatic Complexity   468
+    Maintainability (MI)    45
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-0AFB2  32024  12806  
+0AFB4-0B042   144  0  
+0B044-0BFFE  4028  0  
+
+
+
