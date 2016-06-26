@@ -1,0 +1,148 @@
+#include <main.h>
+#define LCD_ENABLE_PIN PIN_D1
+#define LCD_RS_PIN PIN_D0
+#define LCD_RW_PIN PIN_D2
+#define LCD_DATA4 PIN_D4
+#define LCD_DATA5 PIN_D5
+#define LCD_DATA6 PIN_D6
+#define LCD_DATA7 PIN_D7
+
+#include <lcd.c>
+
+TCP_SOCKET mySocket;
+
+//Automatically generated functions to do ethernet
+void IPAddressInit(void)
+{
+   AppConfig.Flags.bIsDHCPEnabled = TRUE;
+   DHCPEnable(0); //enable nicWide stack support.
+
+   //MAC address of this unit
+   MY_MAC_BYTE1=MY_DEFAULT_MAC_BYTE1;
+   MY_MAC_BYTE2=MY_DEFAULT_MAC_BYTE2;
+   MY_MAC_BYTE3=MY_DEFAULT_MAC_BYTE3;
+   MY_MAC_BYTE4=MY_DEFAULT_MAC_BYTE4;
+   MY_MAC_BYTE5=MY_DEFAULT_MAC_BYTE5;
+   MY_MAC_BYTE6=MY_DEFAULT_MAC_BYTE6;
+}
+
+///////////////////////////////////////////////
+
+//functions of the server
+
+void vltemeter()   //Example of ADC reading value
+{
+lcd_putc("\fVoltemeter\nis running");
+set_adc_channel(1);
+delay_us(100);
+int value=read_adc();
+char l=value;
+char h=value>>8;
+TCPPut(mySocket,l);
+TCPPut(mySocket,h);
+}
+
+void power_motor_on()   //Example of digital output
+{
+lcd_putc("\fMotor is ON");
+output_bit(PIN_B0,1);
+TCPPutString(mySocket,"Motor is ON");
+}
+
+void power_motor_off()
+{
+lcd_putc("\fMotor is OFF");
+output_bit(PIN_B0,0);
+TCPPutString(mySocket,"Motor is OFF");
+}
+
+char print_my_ip(){
+if (MY_IP_BYTE1==0) return 0;
+lcd_putc(MY_IP_BYTE1/100+48);
+lcd_putc((MY_IP_BYTE1%100)/10+48);
+lcd_putc((MY_IP_BYTE1%100)%10+48);
+lcd_putc('.');
+lcd_putc(MY_IP_BYTE2/100+48);
+lcd_putc((MY_IP_BYTE2%100)/10+48);
+lcd_putc((MY_IP_BYTE2%100)%10+48);
+lcd_putc('.');
+lcd_putc(MY_IP_BYTE3/100+48);
+lcd_putc((MY_IP_BYTE3%100)/10+48);
+lcd_putc((MY_IP_BYTE3%100)%10+48);
+lcd_putc('.');
+lcd_putc(MY_IP_BYTE4/100+48);
+lcd_putc((MY_IP_BYTE4%100)/10+48);
+lcd_putc((MY_IP_BYTE4%100)%10+48);
+return 1;
+}
+
+void pin(short i){
+short bit;
+if (i==1){
+lcd_putc("\fpin high is\nrunning...");
+bit=1;
+}
+else{
+lcd_putc("\fpin low is\nrunning...");
+bit=0;
+}
+unsigned char pin_num[2]={0};
+short done=0;
+while (!done){
+StackTask();
+TCPGetArray(mySocket,pin_num,2);
+switch(pin_num){
+case "B1":output_bit(PIN_B1,bit);done=1;break;
+case "B2":output_bit(PIN_B2,bit);done=1;break;
+case "B3":output_bit(PIN_B3,bit);done=1;break;
+case "B4":output_bit(PIN_B4,bit);done=1;break;
+case "B5":output_bit(PIN_B5,bit);done=1;break;
+case "B6":output_bit(PIN_B6,bit);done=1;break;
+case "B7":output_bit(PIN_B7,bit);done=1;break;
+}
+}
+lcd_putc("\fpin mode end.");
+
+}
+
+///////////////////////////////////////////////
+void main()
+{
+   setup_adc(ADC_READ_ONLY); //prepare analogue port for usage
+   setup_adc_ports(ALL_ANALOG); //set portA pins to work in ADC mode
+
+   IPAddressInit();
+   TickInit();
+   enable_interrupts(GLOBAL);
+   StackInit();
+
+
+   lcd_init();
+   lcd_cursor_on(1);//enable cursor
+   lcd_putc("Welcome\n");
+   
+   int8 temp[1];//buffer to store the recieved bytes
+   char exit=0;
+   char got_ip=0;
+   
+   while(!exit)
+   {
+      StackTask();
+      if (!got_ip) got_ip=print_my_ip();
+      if (TCPIsConnected(mySocket)) //check if client is connected
+      {
+         TCPGetArray(mySocket,temp,1); //receive a byte and store it in temp
+         //delay_ms(500);
+         switch(temp[0]){
+         case '0': temp[0]='6';TCPClose(mySocket);lcd_putc("\fClient\ndisconnected");exit=1;break;
+         case '1': temp[0]='6';vltemeter();break;
+         case '2': temp[0]='6';power_motor_on();break;
+         case '3': temp[0]='6';power_motor_off();break;
+         case '4': temp[0]='6';pin(1);break;
+         case '5': temp[0]='6';pin(0);break;
+         }
+      }      
+   }
+delay_ms(2000);
+lcd_putc("\fProgram end");
+}

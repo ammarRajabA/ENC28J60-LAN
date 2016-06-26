@@ -1,0 +1,37 @@
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCPIP Stack\TCPIP.h" Line 131(8,33): Undefined identifier
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCPIP Stack\TCPIP.h" Line 132(8,31): Undefined identifier
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCPIP Stack\TCPIP.h" Line 133(8,35): Undefined identifier
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\StackTsk2.h" Line 114(5,19): Undefined identifier   STACK_USE_WIFI
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\StackTsk2.h" Line 166(5,19): Undefined identifier   STACK_USE_WIFI
+>>> Warning 203 "C:\Users\Ammar\Desktop\CSS_5\tcpip\StackTsk.c" Line 344(1,1): Condition always TRUE
+>>> Warning 203 "C:\Users\Ammar\Desktop\CSS_5\tcpip\Helpers.c" Line 245(1,1): Condition always TRUE
+>>> Warning 201 "C:\Users\Ammar\Desktop\CSS_5\tcpip\Helpers.c" Line 454(1,1): Assignment inside relational expression
+>>> Warning 201 "C:\Users\Ammar\Desktop\CSS_5\tcpip\Helpers.c" Line 551(1,1): Assignment inside relational expression
+>>> Warning 207 "C:\Users\Ammar\Desktop\CSS_5\tcpip\Helpers.c" Line 1469(1,1): Code has no effect
+>>> Warning 224 "C:\Users\Ammar\Desktop\CSS_5\tcpip\DHCP.c" Line 963(27,66): #warning   this wasn't working with old compilers
+>>> Warning 224 "C:\Users\Ammar\Desktop\CSS_5\tcpip\DHCP.c" Line 991(30,69): #warning   this wasn't working with old compilers
+>>> Warning 224 "C:\Users\Ammar\Desktop\CSS_5\tcpip\DHCP.c" Line 1134(15,44): #warning   not working in old compilers
+>>> Warning 235 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 239(20,25): Unknown Pragma
+>>> Warning 235 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 243(20,25): Unknown Pragma
+>>> Warning 235 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 251(20,25): Unknown Pragma
+>>> Warning 235 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 255(0,5): Unknown Pragma
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 384(8,24): Undefined identifier   TCP_PIC_RAM_SIZE
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 387(8,24): Undefined identifier   TCP_SPI_RAM_SIZE
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 434(14,30): Undefined identifier   TCP_PIC_RAM_SIZE
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 444(14,30): Undefined identifier   TCP_SPI_RAM_SIZE
+>>> Warning 203 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 455(1,1): Condition always TRUE
+>>> Warning 203 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 2015(1,1): Condition always TRUE
+>>> Warning 203 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCP.c" Line 2191(1,1): Condition always TRUE
+>>> Warning 224 "C:\Users\Ammar\Desktop\CSS_5\tcpip\MPFS.c" Line 316(21,45): #warning   4.121 temporary bug fix
+>>> Warning 207 "C:\Users\Ammar\Desktop\CSS_5\tcpip\MPFS.c" Line 716(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Ammar\Desktop\CSS_5\tcpip\ccs_HTTP2.c" Line 260(1,1): Code has no effect
+>>> Warning 201 "C:\Users\Ammar\Desktop\CSS_5\tcpip\ccs_HTTP2.c" Line 479(1,1): Assignment inside relational expression
+>>> Warning 203 "C:\Users\Ammar\Desktop\CSS_5\tcpip\ccs_HTTP2.c" Line 1179(1,1): Condition always TRUE
+>>> Warning 201 "C:\Users\Ammar\Desktop\CSS_5\tcpip\ccs_HTTP2.c" Line 1307(1,1): Assignment inside relational expression
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\StackTsk2.c" Line 218(7,21): Undefined identifier   STACK_USE_WIFI
+>>> Warning 215 "C:\Users\Ammar\Desktop\CSS_5\tcpip\StackTsk2.c" Line 311(5,19): Undefined identifier   STACK_USE_WIFI
+>>> Warning 208 "C:\Users\Ammar\Desktop\CSS_5\tcpip\TCPIP Stack\ccs_HTTP2.h" Line 66(15,31): Function not void and does not return a value  http_format_char
+>>> Warning 202 "C:\Users\Ammar\Desktop\CSS_5\tcpip\Helpers.c" Line 1241(11,19): Variable never used:   toRotate
+      Memory usage:   ROM=21%      RAM=27% - 28%
+      0 Errors,  34 Warnings.
+Build Successful.
