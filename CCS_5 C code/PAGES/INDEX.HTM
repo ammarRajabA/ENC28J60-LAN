@@ -1,0 +1,173 @@
+<html>
+<head>
+<script type="text/javascript">
+/////////////////////////////////////////////////////////////////////////
+////                                                                 ////
+////  AJAX routines for rx/tx of data without having to reload page. ////
+////                                                                 ////
+////  Written by CCS, Inc.                    http://www.ccsinfo.com ////
+////                                                                 ////
+////        (C) Copyright 1996,2013 Custom Computer Services         ////
+//// This source code may only be used by licensed users of the CCS  ////
+//// C compiler.  This source code may only be distributed to other  ////
+//// licensed users of the CCS C compiler.  No other use,            ////
+//// reproduction or distribution is permitted without written       ////
+//// permission.                                                     ////
+/////////////////////////////////////////////////////////////////////////
+var ajaxGet;
+var t;
+var waiting = 0;
+var tValid = 0;
+var nextCgi = "";
+var lastCgi = "";
+var ios6workaround = 0;
+
+function setStartTime()
+{
+   tValid = 1;
+   t = setTimeout('ajax()', 500);
+}
+
+function ajax()
+{
+   if (waiting)
+   {
+      waiting--;
+      if (waiting == 0)
+      {
+         if (lastCgi != "")
+         {
+            if (nextCgi == "")
+               nextCgi = lastCgi;
+            else
+               nextCgi = lastCgi + "&" + nextCgi;
+         }
+      }
+   }
+
+   if (!waiting)
+   {
+      ajaxGet=GetXmlHttpObject();
+
+      if (ajaxGet==null)
+      {
+         alert ("Your browser does not support AJAX!");
+         return;
+      }
+
+      waiting = 5;  //wait 2.5 seconds for a response
+
+      ajaxGet.open("POST", "index.xml", true);
+
+      ajaxGet.onreadystatechange = stateChanged;
+
+      if (nextCgi != "")
+      {
+         ajaxGet.send(nextCgi);
+         lastCgi = nextCgi;
+         nextCgi = "";
+      }
+      else
+      {
+         ajaxGet.send("IGNOREDTAG="+ios6workaround);
+
+         if (++ios6workaround > 255)
+            ios6workaround = 0;
+      }
+   }
+
+   setStartTime();
+}
+
+function sendCgi(cmd, value)
+{
+   if (nextCgi != "")
+      nextCgi += "&";
+
+   nextCgi += cmd + "=" + value;
+}
+
+function GetElementNodeValue(xmlDoc, id)
+{
+   return xmlDoc.getElementsByTagName(id)[0].childNodes[0].nodeValue;
+}
+
+function GetElementAttributeValue(xmlDoc, element, attribute)
+{
+   var n;
+   var i;
+
+   n = xmlDoc.getElementsByTagName(element)[0].attributes.length;
+
+   for (i=0; i<n; i++)
+   {
+      if (xmlDoc.getElementsByTagName(element)[0].attributes[i].name == attribute)
+      {
+         return xmlDoc.getElementsByTagName(element)[0].attributes[i].value;
+      }
+   }
+
+   return "";
+}
+
+function UpdateExistingTable(xmlDoc)
+{
+   var i = 0;
+
+   for(;;)
+   {
+      var id = "dyn"+i;
+      i++;
+      if (document.getElementById(id))
+      {
+         document.getElementById(id).innerHTML = GetElementNodeValue(xmlDoc, id);
+      }
+      else
+         break;
+   }
+}
+
+function stateChanged()
+{
+   if (ajaxGet.readyState==4)
+   {
+      UpdateExistingTable(ajaxGet.responseXML.documentElement);
+
+      waiting = 0;
+  }
+}
+
+function GetXmlHttpObject()
+{
+   if (window.XMLHttpRequest)
+   {
+      // code for IE7+, Firefox, Chrome, Opera, Safari
+      return new XMLHttpRequest();
+   }
+   if (window.ActiveXObject)
+   {
+      // code for IE6, IE5
+      return new ActiveXObject("Microsoft.XMLHTTP");
+   }
+   return null;
+}
+</script>
+
+
+<title>My Webpage</title>
+</head>
+
+<body onload="setStartTime('');"> 
+
+<H1>My Webpage</H1>
+
+<TABLE BORDER=1>
+</TABLE>
+
+<BR/>
+
+<FORM>
+</FORM>
+
+</body>
+</html>
